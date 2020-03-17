@@ -30,8 +30,9 @@ body {
 
 }
 
+
 .glow {
- 
+    
     color: #fff;
     text-align: center;
     -webkit-animation: glow 1s ease-in-out infinite alternate;
@@ -92,10 +93,6 @@ font-weight: 900;
 font-size: 4.0em;
 }
 
-.glow .letter {
-display: inline-block;
-line-height: 1em;
-}
 
 .logos .logo{
 display: inline-block;

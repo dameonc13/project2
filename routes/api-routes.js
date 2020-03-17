@@ -7,7 +7,13 @@ var db =  require("../models/");
 module.exports = function(app) {
     //Search for a specific Player( or all players on team the Provides the Json)
     app.get('/api/users/', function(req, res){
-        db.Score.findAll({})
+        db.Score.findAll({
+            order: [
+                ['userScore', 'DESC'],
+                [ "userName",  "ASC"]
+
+            ]
+        })
        .then(function(dbScore){
            res.json(dbScore)
        })

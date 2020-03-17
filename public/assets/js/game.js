@@ -1,3 +1,5 @@
+//import { col } from "sequelize/types";
+
 $(document).ready(function () {
 
     var secondsLeft = 10;
@@ -352,7 +354,16 @@ function initializeRows( Uscores) {
 
 function createRows(Uscores) {
     var columns = $("<div>")
-    columns.addClass("row")
+    // var rankCol = $("<div>")
+    // var highCol = $("<div>")
+    // var scoreCol = $("<div>")
+    // rankCol.text("Rank")
+    // highCol.text("User Name")
+    // scoreCol.text("Score")
+    // rankCol.addClass("col-md-4")
+    // highCol.addClass("col-md-4")
+    // scoreCol.addClass("col-md-4")
+    columns.addClass("row") 
     var rank = $("<div>")
     var userNames = $("<div>")
     var userScores = $("<div>")
@@ -363,8 +374,8 @@ function createRows(Uscores) {
     rank.text(count)
     userNames.text(Uscores.userName)
     userScores.text(Uscores.userScore)
-
-    columns.append(rank, userNames, userScores)
+    // columns.append(rankCol,"<hr>", highCol,"<hr>" ,scoreCol)
+    columns.append(rank,"<hr>", userNames,"<hr>" ,userScores)
     return columns
 
 }

@@ -15,9 +15,14 @@ module.exports = function(app) {
 
     // game route loads the game.html page,
   // where users can enter new players to the db
-  app.get("/add", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/assets/game.html"));
+  app.get("/game", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/game.html"));
   });
+
+  app.get("/scores", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/scores.html"));
+  });
+  
 
 
 

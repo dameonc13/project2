@@ -1,10 +1,8 @@
  { 
   "development": {
     "username": "root",
- Ramal
-    "password": "ucon2020",
-
-    "database": "teamplayer",
+    "password": "Jahrasta_13",
+    "database": "NBAteam",
     "host": "127.0.0.1",
     "dialect": "mysql",
     "operatorsAliases": false

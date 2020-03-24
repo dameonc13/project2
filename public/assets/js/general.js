@@ -135,7 +135,8 @@ $('img').click(function () {
       var playerName = ""
       playerName = $(this).text();
       var firstName = playerName.split(" ", 1);
-
+    
+      
 
 
 
@@ -157,14 +158,18 @@ $('img').click(function () {
      
             var info = []
             playerDiv.empty()
-
+            
+          
           // loop the data return from data and push to info array 
         for (i = 0; i < response.api.players.length; i++) {
          
           
-          if (id = response.api.players[i].teamId) {
-          
-          console.log(id , response.api.players[i].collegeName);
+         
+            console.log(id);
+            
+          if (id ===  response.api.players[i].teamId ) {
+           
+          console.log(id , response.api.players);
           //data being push is all the players with the same first name fix to only add player selected from earlier coming soon 
             info.push(  '<div> Full Name: ' + playerName + '<div/>' +
             '<div> College: ' + response.api.players[i].collegeName + '<div/>' +
@@ -176,7 +181,8 @@ $('img').click(function () {
          
         }}   
 
-       
+  
+        
         
         playerDiv.append(info)
         // player selected is turn to true allowing user to start game, if start button is clicked it the alert will still pop up fix coming soon  

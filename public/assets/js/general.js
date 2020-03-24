@@ -191,7 +191,7 @@ $('img').click(function () {
             "<div>Date Of Birth: " + response.api.players[i].dateOfBirth +
           "<div>  NBA Debut Year: " + response.api.players[i].startNba +'<div/>'
          +"<div> Height in Meters: " + response.api.players[i].heightInMeters + '<div/>' +
-        " d<iv> Weight In Meters" +response.api.players[i].weightInKilograms +'<div/><br>' )
+        " <div> Weight In Meters" +response.api.players[i].weightInKilograms +'<div/><br>' )
          
         }}   
 

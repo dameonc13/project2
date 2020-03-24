@@ -135,6 +135,20 @@ $('img').click(function () {
       var playerName = ""
       playerName = $(this).text();
       var firstName = playerName.split(" ", 1);
+      var name = playerName.split(/[\s,]+/);
+      jrAndGenz = playerName.split(' ').slice(-1).join(' ');
+      lastName = name[1] 
+
+      if(lastName === jrAndGenz){   
+      }
+      else{
+        
+        lastName = lastName + " " + jrAndGenz   
+      }
+      
+     
+      console.log(lastName);
+      
     
       
 
@@ -167,7 +181,7 @@ $('img').click(function () {
          
             console.log(id);
             
-          if (id ===  response.api.players[i].teamId ) {
+          if (id ===  response.api.players[i].teamId && lastName === response.api.players[i].lastName) {
            
           console.log(id , response.api.players);
           //data being push is all the players with the same first name fix to only add player selected from earlier coming soon 
